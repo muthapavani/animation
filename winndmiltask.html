@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" UTF-8">
+        <meta  name="viewport" content="width=display-width" initial-scale="1.0">
+        <title> Windmill</title>
+        <style>
+            .body{
+                height:100%;
+                width:100%;
+            }
+            .round{
+                background-color: blueviolet;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                position:absolute;
+                top: 220px;
+                left:195px;
+            }
+        
+            .blade1{
+                height: 15px;
+                width: 300px;
+                background-color: brown;
+                position:absolute;
+                top:240px;
+                left:70px;
+                transform: translate(-50%, -50%);
+            }
+            .blade2{
+                height: 300px;
+                width: 15px;
+                background-color: brown;
+                position:absolute;
+                top:100px;
+                left:210px;
+                transform: translate(-50%, -50%);
+            }
+
+            .blade5{
+                height: 350px;
+                width: 35px;
+                background-color: chocolate;
+                position:absolute;
+                top:250px;
+                left:50%;
+            }
+.wind{
+    height: 650px;
+    width: 400px;
+    background-color: aquamarine;
+ position: absolute;
+ top: 200px;;
+ left: 40%;
+ transform: translate(-50px ,-50px);
+
+}
+
+
+
+@keyframes spin {
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+
+.div2{
+    animation: spin 1s linear infinite ;
+}
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="wind">
+            <div class="blade5"></div><br>
+        <div class=" round"></div>
+              <div class="blade1 div2"></div><br>
+                  <div class="blade2 div2"></div><br>
+                  
+           </div>
+           </div>
+    </body>
+</html>
